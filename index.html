@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>9K.CLUB - Official Premium</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3124953321037538');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3124953321037538&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#080300;color:#fff;overflow-x:hidden}
+.header{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:linear-gradient(90deg,#1a0f00,#2b1800);border-bottom:2px solid #ff8c00}
+.logo{height:46px}
+.live{color:#00ff66;border:1px solid #00ff66;background:rgba(0,255,100,0.12);padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;display:flex;gap:6px;align-items:center}
+.dot{width:8px;height:8px;background:#00ff66;border-radius:50%;animation:blink 1s infinite}
+@keyframes blink{50%{opacity:0.2}}
+.hero img{width:100%;display:block}
+.ticker{background:#111;border-y:1px solid #222;padding:8px 0;white-space:nowrap;overflow:hidden;color:#ffcc00;font-weight:700;font-size:13px}
+.ticker span{margin:0 18px}
+.stats{display:flex;gap:10px;padding:12px}
+.box{flex:1;background:linear-gradient(145deg,#1e1e1e,#2a2010);border:1px solid #ffaa00;border-radius:12px;padding:12px;text-align:center}
+.box h2{font-size:22px;color:#ffb700;font-weight:800}
+.box p{font-size:11px;color:#aaa;margin-top:3px}
+.banner{width:100%;border-radius:14px;margin:8px 0;display:block}
+.cta{padding:16px;background:radial-gradient(circle at top,#281800,#080300)}
+.btn{width:100%;background:linear-gradient(90deg,#ff8c00,#ffd000);color:#000;font-weight:800;font-size:20px;padding:18px;border:none;border-radius:14px;box-shadow:0 0 25px rgba(255,140,0,0.7);animation:pulse 1.3s infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+.trust{display:flex;justify-content:center;gap:16px;margin-top:12px;font-size:11px;color:#888}
+.toast{position:fixed;bottom:85px;left:12px;right:12px;background:linear-gradient(90deg,#1a1a1a,#2b2200);border:1px solid #ffb700;border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:12px;transform:translateY(200%);transition:0.4s;z-index:99}
+.toast.show{transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<div class="header">
+<img src="logo.jpg" class="logo">
+<div class="live"><div class="dot"></div><span id="liveCnt">12,847</span> LIVE</div>
+</div>
+
+<div class="hero">
+<img src="b1.jpg">
+</div>
+
+<div class="ticker" id="ticker">
+<span>🔥 User 98****21 won ₹34,500</span>
+<span>💰 User 87****33 won ₹22,800</span>
+<span>🎉 User 76****09 won ₹41,200</span>
+</div>
+
+<div class="stats">
+<div class="box"><h2 id="memCnt">18,472</h2><p>Online Members</p></div>
+<div class="box"><h2 id="payCnt">₹3.8L+</h2><p>Today Payout</p></div>
+</div>
+
+<div style="padding:0 12px">
+<img src="b2.jpg" class="banner">
+<img src="b3.jpg" class="banner">
+</div>
+
+<div class="cta">
+<button class="btn" onclick="goRegister()">
+REGISTER & GET ₹500 BONUS
+<div style="font-size:11px;font-weight:600;color:#4a2000;margin-top:4px">Instant Bonus • Withdraw in 2 Min • Limited Slots</div>
+</button>
+<div class="trust">
+<span>✅ 100% Safe</span><span>⚡ Instant Withdraw</span><span>👥 2M+ Users</span>
+</div>
+</div>
+
+<div class="toast" id="toastBox">
+<img src="logo.jpg" style="width:38px;height:38px;border-radius:50%">
+<div>
+<div style="font-size:12px">User <b id="tId">98****21</b> just won big</div>
+<div style="font-size:18px;font-weight:800;color:#00ff66" id="tAmt">₹24,500</div>
+</div>
+</div>
+
+<script>
+const REG_LINK = "https://9kclub5.com/register?inviteCode=HNJ8Q2N&from=web";
+
+function goRegister(){
+  try{
+    fbq('track','CompleteRegistration
